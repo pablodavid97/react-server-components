@@ -18,11 +18,6 @@ export default async function Home() {
     );
     return (
         <main>
-            <ErrorBoundary fallback={<p>Something went wrong!</p>}>
-                <Suspense fallback={<p>Loading users...</p>}>
-                    <UsePromiseDemo usersPromise={fetchUsersPromise} />
-                </Suspense>
-            </ErrorBoundary>
             <ServerActionsDemo />
             <DataFetchingDemo />
             <ClientDemo>
